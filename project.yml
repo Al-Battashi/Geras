@@ -1,0 +1,85 @@
+name: PDFCompressor
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: 12.0
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+    MACOSX_DEPLOYMENT_TARGET: 12.0
+    DEAD_CODE_STRIPPING: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+targets:
+  PDFCompressor:
+    type: application
+    platform: macOS
+    sources:
+      - PDFCompressor
+    resources:
+      - Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.pdfcompressor
+        INFOPLIST_KEY_CFBundleDisplayName: "Geras : PDF Compressor"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+    postbuildScripts:
+      - name: Bundle Tools
+        script: |
+          set -euo pipefail
+
+          QPDF_SRC_DIR="$SRCROOT/Vendor/qpdf"
+          QPDF_DST_DIR="$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Resources/qpdf"
+          if [ -d "$QPDF_SRC_DIR" ]; then
+            rm -rf "$QPDF_DST_DIR"
+            mkdir -p "$QPDF_DST_DIR"
+            cp -a "$QPDF_SRC_DIR/." "$QPDF_DST_DIR/"
+            if [ -f "$QPDF_DST_DIR/qpdf" ]; then
+              chmod +x "$QPDF_DST_DIR/qpdf"
+              if command -v codesign >/dev/null 2>&1; then
+                codesign --force --sign - --timestamp=none "$QPDF_DST_DIR/qpdf"
+              fi
+            fi
+            if command -v codesign >/dev/null 2>&1; then
+              for lib in "$QPDF_DST_DIR/lib"/*.dylib; do
+                if [ -f "$lib" ]; then
+                  codesign --force --sign - --timestamp=none "$lib"
+                fi
+              done
+            fi
+            echo "Bundled qpdf assets -> $QPDF_DST_DIR"
+          else
+            echo "warning: qpdf assets not found at $QPDF_SRC_DIR"
+          fi
+
+          GS_SRC_DIR="$SRCROOT/Vendor/ghostscript"
+          GS_DST_DIR="$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Resources/ghostscript"
+          if [ -d "$GS_SRC_DIR" ]; then
+            rm -rf "$GS_DST_DIR"
+            mkdir -p "$GS_DST_DIR"
+            cp -a "$GS_SRC_DIR/." "$GS_DST_DIR/"
+            if [ -f "$GS_DST_DIR/gs" ]; then
+              chmod +x "$GS_DST_DIR/gs"
+              if command -v codesign >/dev/null 2>&1; then
+                codesign --force --sign - --timestamp=none "$GS_DST_DIR/gs"
+              fi
+            fi
+            if command -v codesign >/dev/null 2>&1; then
+              for lib in "$GS_DST_DIR/lib"/*.dylib; do
+                if [ -f "$lib" ]; then
+                  codesign --force --sign - --timestamp=none "$lib"
+                fi
+              done
+            fi
+            echo "Bundled ghostscript assets -> $GS_DST_DIR"
+          else
+            echo "warning: ghostscript assets not found at $GS_SRC_DIR"
+          fi
+        inputFiles:
+          - "$(SRCROOT)/Vendor/qpdf/qpdf"
+          - "$(SRCROOT)/Vendor/ghostscript/gs"
+        outputFiles:
+          - "$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Resources/qpdf/qpdf"
+          - "$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Resources/ghostscript/gs"

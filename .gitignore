@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+# SwiftPM
+.build/
+
+# Test outputs / samples
+_test_outputs/
+Chemistry - Steve Owen - Third Edition - Cambridge 2023*.pdf
+
+# Misc
+*.log
+*.swp
