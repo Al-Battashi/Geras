@@ -7,86 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FE6E379450C9CA20AE0D465 /* GhostscriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBE56C770BEB106A6E1BC3 /* GhostscriptService.swift */; };
-		19AA73ACB4EA7A4D642972B2 /* QPDFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32EEB5DA9D4595902FCD46 /* QPDFService.swift */; };
-		7BBB4AF74F76EBA3B4E2E176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B7F7B800DABB13649F774 /* ContentView.swift */; };
-		B55793E0D0DE1D7283615823 /* PDFCompressorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55704DBAF724A86956F01FD /* PDFCompressorApp.swift */; };
-		D06BEA9321570394E1933F6D /* RasterizeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEF32C1DBECAAF5A3160AC6 /* RasterizeService.swift */; };
-		D69A934D9CBC9DAA3B4AEED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9056A26B6A03C552B2AE08EF /* Assets.xcassets */; };
+		1BF6E13945FF1BDAD2E7D1FE /* GhostscriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7F8A3F1BCF4A2D00E2217 /* GhostscriptService.swift */; };
+		4331F7B8C177C2C5A8994E48 /* QPDFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB5A280220E9765556685C7 /* QPDFService.swift */; };
+		ACDBD0CB5684137C202BCB0C /* GerasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7AEA16CA9DD405A60AF66 /* GerasApp.swift */; };
+		CF4F961413760F9782C22F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31230BD2B2494CC842AE105E /* Assets.xcassets */; };
+		F64B3353BFF21A4B0BBAF077 /* RasterizeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D36AD8D693362AB37345F5 /* RasterizeService.swift */; };
+		FA36DE40F20A760F4793552D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE55CF80F2EA75FC577473 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06CBE56C770BEB106A6E1BC3 /* GhostscriptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostscriptService.swift; sourceTree = "<group>"; };
-		5E32EEB5DA9D4595902FCD46 /* QPDFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPDFService.swift; sourceTree = "<group>"; };
-		9056A26B6A03C552B2AE08EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		99DDD1B243B007332D57B234 /* PDFCompressor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFCompressor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D8B7F7B800DABB13649F774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D55704DBAF724A86956F01FD /* PDFCompressorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCompressorApp.swift; sourceTree = "<group>"; };
-		EAEF32C1DBECAAF5A3160AC6 /* RasterizeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasterizeService.swift; sourceTree = "<group>"; };
+		09D36AD8D693362AB37345F5 /* RasterizeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasterizeService.swift; sourceTree = "<group>"; };
+		31230BD2B2494CC842AE105E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AC498566F5B7642F9233F96 /* Geras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geras.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82CE55CF80F2EA75FC577473 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFB5A280220E9765556685C7 /* QPDFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPDFService.swift; sourceTree = "<group>"; };
+		BEC7AEA16CA9DD405A60AF66 /* GerasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GerasApp.swift; sourceTree = "<group>"; };
+		CED7F8A3F1BCF4A2D00E2217 /* GhostscriptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostscriptService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		53045FD82F7FCFC26770C26B /* Products */ = {
+		139EC062C7A3EF8F506FD3E9 = {
 			isa = PBXGroup;
 			children = (
-				99DDD1B243B007332D57B234 /* PDFCompressor.app */,
+				F7B1D8E996954636CFBFE4C8 /* Geras */,
+				361B74C395FBA5EDC7ED3A8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		361B74C395FBA5EDC7ED3A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AC498566F5B7642F9233F96 /* Geras.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BDCDA678B4831588884FE615 /* PDFCompressor */ = {
+		F7B1D8E996954636CFBFE4C8 /* Geras */ = {
 			isa = PBXGroup;
 			children = (
-				9056A26B6A03C552B2AE08EF /* Assets.xcassets */,
-				9D8B7F7B800DABB13649F774 /* ContentView.swift */,
-				06CBE56C770BEB106A6E1BC3 /* GhostscriptService.swift */,
-				D55704DBAF724A86956F01FD /* PDFCompressorApp.swift */,
-				5E32EEB5DA9D4595902FCD46 /* QPDFService.swift */,
-				EAEF32C1DBECAAF5A3160AC6 /* RasterizeService.swift */,
+				31230BD2B2494CC842AE105E /* Assets.xcassets */,
+				82CE55CF80F2EA75FC577473 /* ContentView.swift */,
+				BEC7AEA16CA9DD405A60AF66 /* GerasApp.swift */,
+				CED7F8A3F1BCF4A2D00E2217 /* GhostscriptService.swift */,
+				AFB5A280220E9765556685C7 /* QPDFService.swift */,
+				09D36AD8D693362AB37345F5 /* RasterizeService.swift */,
 			);
-			path = PDFCompressor;
-			sourceTree = "<group>";
-		};
-		F80232B632F3D6326CA0E12E = {
-			isa = PBXGroup;
-			children = (
-				BDCDA678B4831588884FE615 /* PDFCompressor */,
-				53045FD82F7FCFC26770C26B /* Products */,
-			);
+			path = Geras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F6C53AB223F2E968E4ABE1C /* PDFCompressor */ = {
+		8B454E85FE8476D31069CDB2 /* Geras */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29366B17D0FB3ACA9EE9D65D /* Build configuration list for PBXNativeTarget "PDFCompressor" */;
+			buildConfigurationList = 79932572ECF8DDAEE610408C /* Build configuration list for PBXNativeTarget "Geras" */;
 			buildPhases = (
-				5D5E28E6369EED01F0350D69 /* Sources */,
-				043B5E2F8637BF358B9B6972 /* Resources */,
-				CD06FE09C2C87A9759126302 /* Bundle Tools */,
+				10A60A1C3409A01638EE6CDB /* Sources */,
+				9F0068B643E4FBFF80D0E347 /* Resources */,
+				32AD6F3EA6C9A0FA2F666D30 /* Bundle Tools */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PDFCompressor;
+			name = Geras;
 			packageProductDependencies = (
 			);
-			productName = PDFCompressor;
-			productReference = 99DDD1B243B007332D57B234 /* PDFCompressor.app */;
+			productName = Geras;
+			productReference = 3AC498566F5B7642F9233F96 /* Geras.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5F8186684289AE0720A8222E /* Project object */ = {
+		0C7FC439CB0600A466BB6C07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = F4335537AF99659F2CD10CB8 /* Build configuration list for PBXProject "PDFCompressor" */;
+			buildConfigurationList = B2089BB26EF305B27F42A349 /* Build configuration list for PBXProject "Geras" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -94,30 +94,30 @@
 				Base,
 				en,
 			);
-			mainGroup = F80232B632F3D6326CA0E12E;
+			mainGroup = 139EC062C7A3EF8F506FD3E9;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F6C53AB223F2E968E4ABE1C /* PDFCompressor */,
+				8B454E85FE8476D31069CDB2 /* Geras */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		043B5E2F8637BF358B9B6972 /* Resources */ = {
+		9F0068B643E4FBFF80D0E347 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69A934D9CBC9DAA3B4AEED3 /* Assets.xcassets in Resources */,
+				CF4F961413760F9782C22F99 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CD06FE09C2C87A9759126302 /* Bundle Tools */ = {
+		32AD6F3EA6C9A0FA2F666D30 /* Bundle Tools */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -148,22 +148,116 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D5E28E6369EED01F0350D69 /* Sources */ = {
+		10A60A1C3409A01638EE6CDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BBB4AF74F76EBA3B4E2E176 /* ContentView.swift in Sources */,
-				0FE6E379450C9CA20AE0D465 /* GhostscriptService.swift in Sources */,
-				B55793E0D0DE1D7283615823 /* PDFCompressorApp.swift in Sources */,
-				19AA73ACB4EA7A4D642972B2 /* QPDFService.swift in Sources */,
-				D06BEA9321570394E1933F6D /* RasterizeService.swift in Sources */,
+				FA36DE40F20A760F4793552D /* ContentView.swift in Sources */,
+				ACDBD0CB5684137C202BCB0C /* GerasApp.swift in Sources */,
+				1BF6E13945FF1BDAD2E7D1FE /* GhostscriptService.swift in Sources */,
+				4331F7B8C177C2C5A8994E48 /* QPDFService.swift in Sources */,
+				F64B3353BFF21A4B0BBAF077 /* RasterizeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		05238B599F61CE90DE8A2882 /* Debug */ = {
+		032692914FEFA91FD6785A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		A9379C2AD0E105F22BE4D88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Geras : PDF Compressor";
+				INFOPLIST_KEY_CFBundleName = "Geras PDF Compressor";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geras.pdfcompressor;
+				PRODUCT_NAME = "Geras PDF Compressor";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B6C850662AEEFCE99401523F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Geras : PDF Compressor";
+				INFOPLIST_KEY_CFBundleName = "Geras PDF Compressor";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geras.pdfcompressor;
+				PRODUCT_NAME = "Geras PDF Compressor";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C36EC7D72A5C46AC4B41C7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,118 +322,28 @@
 			};
 			name = Debug;
 		};
-		4436A26987F117C2F4D81468 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Geras : PDF Compressor";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.pdfcompressor;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		67022D6F2D0E0A2C46421BF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.9;
-			};
-			name = Release;
-		};
-		8577D5EAE63708FB107C3B15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Geras : PDF Compressor";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.pdfcompressor;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29366B17D0FB3ACA9EE9D65D /* Build configuration list for PBXNativeTarget "PDFCompressor" */ = {
+		79932572ECF8DDAEE610408C /* Build configuration list for PBXNativeTarget "Geras" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4436A26987F117C2F4D81468 /* Debug */,
-				8577D5EAE63708FB107C3B15 /* Release */,
+				B6C850662AEEFCE99401523F /* Debug */,
+				A9379C2AD0E105F22BE4D88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F4335537AF99659F2CD10CB8 /* Build configuration list for PBXProject "PDFCompressor" */ = {
+		B2089BB26EF305B27F42A349 /* Build configuration list for PBXProject "Geras" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				05238B599F61CE90DE8A2882 /* Debug */,
-				67022D6F2D0E0A2C46421BF9 /* Release */,
+				C36EC7D72A5C46AC4B41C7E9 /* Debug */,
+				032692914FEFA91FD6785A1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5F8186684289AE0720A8222E /* Project object */;
+	rootObject = 0C7FC439CB0600A466BB6C07 /* Project object */;
 }

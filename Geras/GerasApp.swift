@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct PDFCompressorApp: App {
+struct GerasApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

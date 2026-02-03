@@ -1,4 +1,4 @@
-![Geras Icon](icons/Light-mode.png)
+![Geras Icon](icons/Light-mode-github.png)
 
 # Geras : PDF Compressor
 
@@ -30,10 +30,10 @@ Geras is a native macOS PDF compressor built with SwiftUI. It bundles QPDF (loss
    scripts/vendor_ghostscript.sh
    ```
 
-3. Open `PDFCompressor.xcodeproj` and build.
+3. Open `Geras.xcodeproj` and build.
 
 The build process copies the bundled tools into the app at:
-`PDFCompressor.app/Contents/Resources/`
+`Geras PDF Compressor.app/Contents/Resources/`
 
 ## Distribution
 Releases are shipped as a ready-to-run `.app` bundle. Users do **not** need Homebrew or any terminal steps.
