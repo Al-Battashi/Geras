@@ -9,7 +9,7 @@ settings:
     SWIFT_VERSION: 5.9
     MACOSX_DEPLOYMENT_TARGET: 12.0
     DEAD_CODE_STRIPPING: YES
-    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
 
 targets:
   PDFCompressor:
@@ -78,7 +78,13 @@ targets:
             echo "warning: ghostscript assets not found at $GS_SRC_DIR"
           fi
         inputFiles:
+          - "$(SRCROOT)/Vendor/qpdf"
+          - "$(SRCROOT)/Vendor/qpdf/lib"
+          - "$(SRCROOT)/Vendor/qpdf/share"
           - "$(SRCROOT)/Vendor/qpdf/qpdf"
+          - "$(SRCROOT)/Vendor/ghostscript"
+          - "$(SRCROOT)/Vendor/ghostscript/lib"
+          - "$(SRCROOT)/Vendor/ghostscript/share"
           - "$(SRCROOT)/Vendor/ghostscript/gs"
         outputFiles:
           - "$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Resources/qpdf/qpdf"
